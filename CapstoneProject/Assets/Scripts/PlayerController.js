@@ -2,7 +2,6 @@
 
 var player : GameObject;
 
-
 function Start () {
 	
 }
