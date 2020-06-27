@@ -1,9 +1,9 @@
 ﻿#pragma strict
 
 public var player : GameObject ;
-public var Insertion : GameObject ;
-public var Inventory : GameObject ;
-public var Deletion: GameObject;
+public var inventory : GameObject;
+public var delection : GameObject;
+public var inserction : GameObject;
 
 function Start ()
 {
@@ -19,17 +19,20 @@ function OnCollisionEnter (coll:Collision)
 {
 	if(coll.gameObject.tag == "Input")
 	{
-        Insertion.SetActive(true);
+		player.GetComponent(inven).re();
+        inserction.SetActive(true);
+		
 		print("삽입");
 	}
 	else if(coll.gameObject.tag == "Output")
-	{
-		Inventory.SetActive(true);
+	{	player.GetComponent(inven).re();
+		delection.SetActive(true);
+
 		print("삭제");
 	}
 	else if(coll.gameObject.tag == "Inventory")
-	{
-		Inventory.SetActive(true);
+	{	player.GetComponent(inven).re();
+		inventory.SetActive(true);
 		print("관리");
 	}
 
