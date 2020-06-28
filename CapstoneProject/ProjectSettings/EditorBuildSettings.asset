@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/MainIntro.unity
+    guid: e158eb1181dda4644b5c1463b9759487
+  - enabled: 1
+    path: Assets/Scene/CapstonePj.unity
+    guid: b796fe6bd41eebc46a7e2cf4bc964dff
