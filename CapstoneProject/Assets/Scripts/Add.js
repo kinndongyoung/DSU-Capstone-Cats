@@ -16,6 +16,7 @@ function Update () {
 function Addfunction(){
 	print("추가");
 	destobj.SendMessage("additem",item);
+	GetComponent.<AudioSource>().Play();
 	
 	
 }
@@ -23,6 +24,7 @@ function Addfunction(){
 function Delefunction(){
 	print("삭제");
 	destobj.SendMessage("delitem",num);
+	GetComponent.<AudioSource>().Play();
 	
 	
 	
